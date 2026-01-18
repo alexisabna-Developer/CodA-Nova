@@ -1,3 +1,4 @@
+
 # CodA-Nova - Simple Responsive Navigation Menu (Template 1)
 
 A clean, mobile-first navigation menu built with pure HTML5 and CSS3.  
@@ -73,8 +74,8 @@ Each navigation template includes a Figma prototype to visualize layout and UI b
 
 > You can also include static screenshots in your `assets/prototype/` folder:
 
-![Mobile Prototype](assets/prototype/Mobile.png)
-![Desktop Navbar Prototype](assets/prototype/Navbar_Desktop.png)
+![Mobile Prototype](assets/prototypes/Mobile.png)
+![Desktop Navbar Prototype](assets/prototypes/Navbar_Desktop.png)
 
 
 ## 🌐 Browser Compatibility
