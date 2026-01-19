@@ -1,6 +1,10 @@
 
 # CodA-Nova - Simple Responsive Navigation Menu (Template 1)
 
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-mobile?logo=windowsterminal&logoColor=white)
+
 A clean, mobile-first navigation menu built with pure HTML5 and CSS3.  
 This template provides a simple, accessible, and responsive navigation layout without any JavaScript dependency.
 
