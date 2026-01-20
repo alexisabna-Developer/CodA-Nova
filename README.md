@@ -76,7 +76,7 @@ Each navigation template includes a Figma prototype to visualize layout and UI b
 - [Template 1 Prototype](https://www.figma.com/design/Md488nicaxcKZXrwNCnuyw/Cod-A-Nova-Menu?node-id=26-7&t=UuuWAbCCP1yXFrxZ-0/Template-1)  
 - [Template 2 Prototype](https://www.figma.com/design/Md488nicaxcKZXrwNCnuyw/Cod-A-Nova-Menu?node-id=28-16&p=f&t=UuuWAbCCP1yXFrxZ-0/Template-2)
 
-> You can also include static screenshots in your `assets/prototype/` folder:
+> You can also include static screenshots in your `assets/prototypes/` folder:
 
 ![Mobile Prototype](assets/prototypes/Mobile.png)
 ![Desktop Navbar Prototype](assets/prototypes/Navbar_Desktop.png)
