@@ -103,3 +103,6 @@ Tested and compatible with:
 ## 👤 Credits
 - Fonts: System fonts (Arial, Helvetica, sans-serif)
 - Prototypes: Figma
+
+## Contact
+🔗 Connect with me on [LinkedIn](www.linkedin.com/in/abna-alexis)
