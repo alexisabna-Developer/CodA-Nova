@@ -1,0 +1,239 @@
+/* Universal selector: removes default browser margin and padding */
+*
+{
+    margin: 0;
+    /* Removes default margins applied by the browser */
+
+    padding: 0;
+    /* Removes default internal spacing (padding) */
+
+    box-sizing: border-box;
+    /* Includes padding and border inside the element’s width and height */
+}
+
+
+/* Global body styles */
+body
+{
+    font-family: sans-serif;
+    /* Uses a clean and readable font */
+
+    font-size: 16px;
+    /* Sets a standard base font size */
+
+    background-color: #f4f4f4;
+    /* Light background color to contrast with the navbar */
+}
+
+
+/* Header section */
+header
+{
+    position: sticky;
+    /* Makes the navbar stick to the top while scrolling */
+
+    top: 0;
+    /* Positions the header at the top of the viewport */
+
+    z-index: 1000;
+    /* Ensures the navbar stays above other elements */
+
+    height: 70px;
+}
+
+
+/* Navigation bar */
+nav
+{
+    display: flex;
+    /* Enables Flexbox for horizontal alignment */
+
+    justify-content: space-between;
+    /* Distributes space evenly between elements */
+
+    align-items: center;
+    /* Vertically centers items */
+
+    background-color: #333;
+    /* Dark background color for the navbar */
+
+    padding: 20px 40px;
+    /* Vertical spacing for a comfortable navbar height */
+}
+
+
+/* Logo styling */
+nav .logo
+{
+    color: #fff;
+    /* Sets the logo color to white */
+
+    text-decoration: none;
+    /* Removes underline from the logo link */
+
+    font-size: 18px;
+    /* Slightly increases the logo size */
+
+    font-weight: bold;
+    /* Makes the logo stand out */
+
+    padding: 8px 12px;
+}
+
+/* Hover effect directly on the logo link */
+nav .logo:hover
+{
+    color: #00bfff; 
+    /* Change text color to light blue on hover */
+
+    background-color: #555; 
+    /* Optional: light gray background */
+
+    border-radius: 4px; 
+    /* Slightly rounded corners */
+}
+
+
+/* Menu list */
+nav ul
+{
+    list-style: none;
+    /* Removes default bullet points */
+
+    display: flex;
+    /* Displays menu items in a single row */
+
+    gap: 20px;
+    /* Adds spacing between menu links */
+}
+
+
+/* Menu links */
+nav ul li a
+{
+    color: #fff;
+    /* White color for navigation links */
+
+    text-decoration: none;
+    /* Removes default link underline */
+
+    padding: 8px 12px;
+    /* Increases clickable area for better usability */
+
+    transition: all 0.3s ease;
+    /* Smooth transition effect for hover interactions */
+}
+
+
+/* Hover effect on menu links */
+nav ul li a:hover
+{
+    color: #00bfff;
+    /* Light blue text color on hover */
+
+    background-color: #555;
+    /* Light gray background on hover */
+
+    border-radius: 4px;
+    /* Slightly rounded corners for a modern look */
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 767px)
+{
+    
+    nav
+    /* Targets the navigation bar on small screens */
+    {
+        flex-direction: column;
+        /* Stacks the logo above the menu on small screens */
+
+         padding: 20px 20px;
+        /* Mobile: compact and comfortable */
+    }
+
+    nav ul
+    /* Targets the navigation links list */
+    {
+        flex-direction: column;
+        /* Displays menu links vertically */
+
+        align-items: center;
+        /* Centers links horizontally */
+
+        margin-top: 20px;
+        /* Adds space between the logo and the menu */
+    }
+}
+
+/* TABLETS (768px → 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    nav 
+    /* Navigation bar layout for tablets */
+    {
+        flex-direction: row;
+        /* Aligns logo and menu on the same row */
+        }
+
+    
+    nav ul 
+    /* Menu links container */
+    {
+        flex-direction: row;
+        /* Displays menu links horizontally */
+
+        gap: 20px; 
+        /* Adds equal spacing between each menu item */
+    }
+}
+
+/* DESKTOP (≥ 992px) */
+@media (min-width: 992px) {
+    
+    nav ul 
+    /* Menu links on large screens */
+    {
+        gap: 30px;
+        /* Increases spacing for better readability */
+    }
+   
+}
+
+ /* Hover interactions (desktop devices only) */
+@media (hover: hover) {
+    /* Media query that targets devices capable of hover interactions (desktop/mouse users) */
+    
+    nav ul li a:hover {
+        /* Applies styles when hovering over navigation menu links */
+        
+        color: #00bfff;
+        /* Changes link text color to light blue on hover */
+
+        background-color: #555;
+        /* Changes background color to dark gray on hover */
+
+        border-radius: 4px;
+        /* Adds slightly rounded corners to the link background */
+
+        transition: 0.3s ease;
+        /* Smoothly animates the color and background changes over 0.3 seconds */
+    }
+
+    nav .logo:hover {
+        /* Applies styles when hovering over the logo link */
+        
+        color: #00bfff;
+        /* Changes logo text color to light blue on hover */
+
+        background-color: #555;
+        /* Changes background color to dark gray on hover */
+
+        border-radius: 4px;
+        /* Adds slightly rounded corners to the logo background */
+
+        transition: 0.3s ease;
+        /* Smoothly animates the color and background changes over 0.3 seconds */
+    }
+}
