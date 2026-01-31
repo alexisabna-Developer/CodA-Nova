@@ -3,31 +3,32 @@
 
 ## Badges
 ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)  
-_Indique la maîtrise de HTML5 pour structurer le contenu web._  
+_Shows proficiency in HTML5 for structuring web content._  
 
 ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)  
-_Montre la compétence en CSS3 pour le style et la mise en page responsive._  
+_Indicates skill in CSS3 for styling and responsive layouts._  
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black)  
-_Permet de signaler la capacité à créer des interactions dynamiques et fonctionnalités avancées._  
+_Demonstrates the ability to create dynamic interactions and advanced functionality._  
 
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile--First-success)  
-_Démontre que le projet est mobile-first et adapté à tous les écrans._  
+_Proves the project is mobile-first and adapts to all screen sizes._  
 
 ![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma&logoColor=white)  
-_Indique que le design UI/UX a été pensé et prototypé avec Figma._  
+_Shows that UI/UX design was planned and prototyped using Figma._  
 
 ![GitHub](https://img.shields.io/badge/GitHub-Source-black?logo=github&logoColor=white)  
-_Montre que le projet est versionné et géré sur GitHub._  
+_Indicates the project is version-controlled and managed on GitHub._  
 
 ![Cross-Browser](https://img.shields.io/badge/Cross--Browser-Supported-blue)  
-_Assure que le projet fonctionne correctement sur tous les navigateurs modernes._  
+_Ensures the project works correctly on all modern browsers._  
 
-![Status](https://img.shields.io/badge/Status-Personal_Project-blue) 
-_Transparence sur l’état actuel du projet._  
+![Status](https://img.shields.io/badge/Status-Personal_Project-blue)  
+_Transparency about the current state of the project._  
 
 ![License](https://img.shields.io/badge/License-MIT-green)  
-_Indique que le projet est open-source et bien structuré._
+_Indicates the project is open-source and well-structured._
+
 
 ---
 
@@ -40,19 +41,6 @@ It combines **learning-by-doing** with **production-ready foundations**.
 
 > 🚀 **Current focus:** Navigation menus (Navbars)  
 > 🧩 **Future goal:** A complete UI components library
-
----
-
-## 📑 Table of Contents
-- [Overview](#overview)
-- [Badges](#badges)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Components](#components)
-   - [Navbars](#navbars)
-- [License](#license)
 
 ---
 
