@@ -1,0 +1,148 @@
+/* Universal selector: removes default browser margin and padding */
+*
+{
+     /* Removes default margins applied by the browser */
+    margin: 0;
+
+     /* Removes default internal spacing (padding) */
+    padding: 0;
+
+    /* Includes padding and border inside the element’s width and height */
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body
+{
+    /* Uses a clean and readable font */
+    font-family: sans-serif;
+
+    /* Dark background color for the entire page */
+    background-color: #1c1616;
+
+    /* Light text color for better contrast */
+    color: #1111;
+
+}
+
+/* Navigation bar */
+nav
+{
+    /* Enables Flexbox for horizontal alignment */
+    display: flex;
+
+    /* Distributes space evenly between elements */
+    justify-content: space-between;
+
+    /* Vertically centers items */
+    align-items: center;
+
+    /* Vertical spacing for a comfortable navbar height */
+    padding: 20px 40px;
+
+    /* Light background color for the navbar */
+    background-color: #ffffff;
+}
+
+/* Logo styling */
+.logo
+{
+    /* Removes underline from the logo link */
+    text-decoration: none;
+
+    /* Sets the logo color to white */
+    color: #111111;
+
+    font-family: sans-serif;
+
+    /* Makes the logo stand out */
+    font-weight: bold;
+
+    /* Slightly increases the logo size */
+    font-size: 20px;
+}
+
+
+/* Menu list */
+nav ul
+{
+    /* Removes default bullet points */
+    list-style: none;
+
+    /* Displays menu items in a single row */
+    display: flex;
+
+    /* Adds spacing between menu links */
+    gap: 20px;
+}
+
+/* Menu links */
+nav ul li a 
+{
+    /* Removes default link underline */
+    text-decoration: none;
+
+    /* White color for navigation links */
+    color: #111111;
+
+    /* Slighty increases the links sizes */
+    font-size: 16px;
+    
+    /* Increases clickable area for better usability */
+     padding: 8px 12px;
+    
+}
+
+/* SMARTPHONES (≤ 767px) */
+@media (max-width: 767px) {
+    /* Targets the navigation bar on small screens */
+    nav {
+        /* Stacks navigation items vertically
+           (logo on top, menu below) */
+        flex-direction: column;
+    }
+
+    /* Targets the navigation links list */
+    nav ul {
+        /* Displays menu links vertically */
+        flex-direction: column;
+
+        /* Centers links horizontally */
+        align-items: center;
+
+        /* Adds space between the logo and the menu */
+        margin-top: 10px;
+    }
+}
+
+/* TABLETS (768px → 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navigation bar layout for tablets */
+    nav {
+        /* Aligns logo and menu on the same row */
+        flex-direction: row;
+    }
+
+    /* Menu links container */
+    nav ul {
+        /* Displays menu links horizontally */
+        flex-direction: row;
+
+        /* Adds equal spacing between each menu item */
+        gap: 20px;
+    }
+}
+
+/* DESKTOP (≥ 992px) */
+@media (min-width: 992px) {
+    /* Menu links on large screens */
+    nav ul {
+        /* Increases spacing for better readability */
+        gap: 30px;
+    }
+}
+
+
+
+
+
