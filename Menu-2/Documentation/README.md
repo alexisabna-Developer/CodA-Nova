@@ -1,6 +1,13 @@
 # CodA-Nova – Simple Responsive Navbar Menu-2
 
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Design-success)
+![Documentation](https://img.shields.io/badge/Documentation-Complete-brightgreen)
+![Learning](https://img.shields.io/badge/Learning-In%20Public-blue)
+![Figma](https://img.shields.io/badge/Figma-Prototype-purple?logo=figma&logoColor=white)
+
 
 CodA-Nova is a clean and responsive navigation bar built with **HTML5 and CSS3**.  
 It is designed as an **evolving UI project**, where new features, layouts, and technologies will be added progressively over time.
