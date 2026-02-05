@@ -152,7 +152,7 @@ CodA-Nova/
 - Microsoft Edge
 
 ### **Usage / Demo**
-- Live demo available: [View the project](#)  
+- Live demo available for the first Navbar: [View the project]( https://alexisabna-developer.github.io/CodA-Nova/)  
 
 
 ## 🚀 Installation & Usage
