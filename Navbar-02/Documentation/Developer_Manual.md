@@ -11,22 +11,20 @@ This template is part of the **CodA-Nova UI Series** and is designed to be light
 
 ## 2. File Structure
 
-CodA-Nova/
+CodA-Nova/Navbar-02
 │
-├── index.html # Main HTML file with navbar
+├── index.html                    # Main HTML file with navbar
 ├── README.md
 ├── assets/
 │   ├── css/
-│   │   └── style.css # CSS file for design and layout
+│   │   └── style.css              # CSS file for design and layout
 │   └── prototypes/ screenshots of mobile and desktop layouts for reference
 │       ├── Mobile.png
 │       └── Navbar_Desktop.png
-└── documentation/
+└── Documentation/
     ├── Project_Specifications.md
     ├── User_Manual.md
     ├── Developer_Manual.md
-
-
 
 ---
 
@@ -38,20 +36,21 @@ CodA-Nova/
     <a href="index.html" class="logo">Cod'A-Nova</a>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
     </ul>
   </nav>
 </header>
 ```
+> Note: Some links use `#` as placeholders and are intended to be replaced, by real routes or dynamic behavior in future versions.
+--- 
 
-
-Structure Diagram
+## 4. Structure Diagram
 
 ```
-<nav>
+<nav aria-label="Main navigation">
 ├── <a class="logo">Logo</a>
 └── <ul>
     ├── <li><a>Home</a></li>
@@ -61,9 +60,14 @@ Structure Diagram
     └── <li><a>Blog</a></li>
     </ul>
 </nav>  ```
+---
 
-4. CSS Overview
-```/* Navbar */
+## 5. CSS Overview
+
+```
+CSS
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -89,29 +93,25 @@ nav ul li a:hover {
 }
 ```
 
-5. Adding a New Menu Item
-Open index.html.
+## 6. Adding a New Menu Item
+- Open index.html.
+- Add a new <li><a href="...">New Link</a></li> inside <ul>.
+- Save the file.
+- Update style.css if needed (colors, spacing, hover).
 
-Add a new <li><a href="...">New Link</a></li> inside <ul>.
+## 7. Customization
+- Change logo text or image in <a class="logo">.
+- Update menu links in <ul>.
+- Modify colors, fonts, and spacing in style.css.
 
-Save the file.
+## 8. Notes for Developers
+- Mobile-first responsive design.
+- Hover effects only work on desktop.
+- No JavaScript is needed for basic functionality.
+- Code is commented line by line
+- Can evolve with JS, Bootstrap, or PHP backend later
 
-Update style.css if needed (colors, spacing, hover).
-
-6. Customization
-Change logo text or image in <a class="logo">.
-
-Update menu links in <ul>.
-
-Modify colors, fonts, and spacing in style.css.
-
-7. Notes for Developers
-Mobile-first responsive design.
-
-Hover effects only work on desktop.
-
-No JavaScript is needed for basic functionality.
-
-Code is commented line by line
-
-Can evolve with JS, Bootstrap, or PHP backend later
+## Why No JavaScript?
+This version intentionally avoids JavaScript to help developers
+focus on HTML structure, CSS layout, and responsive design principles.
+JavaScript will be introduced in later phases of the CodA-Nova roadmap.

@@ -1,8 +1,8 @@
-# 🧠 Learning Notes – CodA-Nova Navbar Menu-2
+# 🧠 Learning Notes – CodA-Nova Navbar-02
 
 ## Example: Navigation Menu justify-content Issue
 
-While coding the second template, the navigation menu container, I initially used 'justify-content: space-around' instead of 'space-between'.
+While coding the second template, the navigation menu container, I initially used **'justify-content: space-around' instead of 'space-between'**.
 nav {
     display: flex;
     justify-content: space-around; /* Initial version */
@@ -20,7 +20,7 @@ nav {
 
 resulting in a cleaner and more balanced navigation layout.
 
-This experience reinforced the importance of paying close attention to every line of code and understanding the impact of CSS properties.
+This experience **reinforced the importance of paying close attention** to every line of code and understanding the impact of CSS properties.
 
 ## Key Takeaways
 
@@ -34,16 +34,11 @@ This experience reinforced the importance of paying close attention to every lin
 ## 🧠 Flexbox & Hierarchy in Responsive Menu
 
 While working on the mobile version of the menu, I realized an essential Flexbox rule:
-
-A flex container only affects its **direct children**.
-
-A flex container only affects its direct children.
-
-The logo is a direct child of nav
-
-The ul is also a direct child of nav
-
-The li elements are children of ul, not of nav
+- A flex container only affects its **direct children**.
+- A flex container only affects its direct children.
+- The logo is a direct child of nav
+- The ul is also a direct child of nav
+- The li elements are children of ul, not of nav
 
 Applying flex-direction: column on nav stacks the logo and menu, but does not directly affect the links (li). 
 To organize the links vertically and center them :
@@ -65,18 +60,11 @@ ul {
 - Testing layouts on mobile ensures Media Queries work as expected.  
 - Learning CSS nuances improves code readability and maintainability.
 
-
-
-Summary
-
-Through these examples, I learned the importance of:
-
-Carefully reading each line of code
-
-Understanding Flexbox behavior and element hierarchy
-
-Structuring HTML efficiently for responsive design
-
-Using mistakes as opportunities to improve workflow and coding skills
+## Summary
+- Through these examples, I learned the importance of:
+- Carefully reading each line of code
+- Understanding Flexbox behavior and element hierarchy
+- Structuring HTML efficiently for responsive design
+- Using mistakes as opportunities to improve workflow and coding skills
 
 ✅ By correcting layout issues and mastering these CSS principles, I reinforced my ability to create clean, responsive, and maintainable navigation menus.

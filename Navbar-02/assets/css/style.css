@@ -37,8 +37,6 @@ header
 
     z-index: 1000;
     /* Ensures the navbar stays above other elements */
-
-    height: 70px;
 }
 
 
@@ -78,6 +76,7 @@ nav .logo
     /* Makes the logo stand out */
 
     padding: 8px 12px;
+    /*adds internal spacing around the logo */
 }
 
 /* Hover effect directly on the logo link */
@@ -88,9 +87,6 @@ nav .logo:hover
 
     background-color: #555; 
     /* Optional: light gray background */
-
-    border-radius: 4px; 
-    /* Slightly rounded corners */
 }
 
 
@@ -118,9 +114,9 @@ nav ul li a
     /* Removes default link underline */
 
     padding: 8px 12px;
-    /* Increases clickable area for better usability */
+    /* Adds internal spacing for better clickability */
 
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
     /* Smooth transition effect for hover interactions */
 }
 
@@ -133,9 +129,6 @@ nav ul li a:hover
 
     background-color: #555;
     /* Light gray background on hover */
-
-    border-radius: 4px;
-    /* Slightly rounded corners for a modern look */
 }
 
 
@@ -205,35 +198,12 @@ nav ul li a:hover
 @media (hover: hover) {
     /* Media query that targets devices capable of hover interactions (desktop/mouse users) */
     
-    nav ul li a:hover {
-        /* Applies styles when hovering over navigation menu links */
-        
-        color: #00bfff;
-        /* Changes link text color to light blue on hover */
+/* Hover effect for both the logo and menu links */
+/* When the user hovers over the logo or any navigation link, the text color changes and the background gets highlighted */
+nav .logo:hover,
+nav ul li a:hover {
+    color: #00bfff;          /* Changes the text color to light blue */
+    background-color: #555;  /* Adds a dark gray background on hover */
+}
 
-        background-color: #555;
-        /* Changes background color to dark gray on hover */
-
-        border-radius: 4px;
-        /* Adds slightly rounded corners to the link background */
-
-        transition: 0.3s ease;
-        /* Smoothly animates the color and background changes over 0.3 seconds */
-    }
-
-    nav .logo:hover {
-        /* Applies styles when hovering over the logo link */
-        
-        color: #00bfff;
-        /* Changes logo text color to light blue on hover */
-
-        background-color: #555;
-        /* Changes background color to dark gray on hover */
-
-        border-radius: 4px;
-        /* Adds slightly rounded corners to the logo background */
-
-        transition: 0.3s ease;
-        /* Smoothly animates the color and background changes over 0.3 seconds */
-    }
 }

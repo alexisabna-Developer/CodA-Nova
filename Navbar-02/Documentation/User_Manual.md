@@ -1,19 +1,31 @@
-# User Manual – CodA-Nova Navbar Menu-2
+# User Manual – CodA-Nova Navbar-02
 
 ## Introduction
-This website contains a simple and responsive navigation bar that allows users to move easily between different pages of the site.  
-It works on mobile, tablet, and desktop screens automatically. No configuration is needed.
+This project contains a simple and responsive navigation bar that allows users to move easily between different pages of the site.  
+It works on mobile, tablet, and desktop screens automatically. No configuration or setup is required.
 
 ---
 
+## Intended Users
+This navigation bar is intended for:
+- Website visitors using desktop, tablet, or mobile devices
+- Beginners learning responsive web design
+- Developers testing UI layouts without JavaScript
+---
+
 ## Features
-- **Clickable Logo**: Click the logo to return to the home page.  
+- **Clickable Logo**: Click the logo to return to the home page. 
 - **Navigation Links**: Navigate to pages like Home, About, Portfolio, Contact, and Blog.  
 - **Responsive Design**: Automatically adapts to mobile, tablet, and desktop screens.  
 - **Hover Effects**: Menu links and logo change color when hovered (**desktop only**).  
-- **Sticky Header**: Navbar stays visible while scrolling.  
+- **Sticky Header**: Navbar stays visible while scrolling. 
+- **Accessible Navigation**: Semantic HTML with screen-reader friendly navigation.
+
 
 > ⚠ Note: Hover effects are not available on mobile devices (touchscreens do not support hover).
+
+> ℹ️ Note: Some navigation links are placeholders and may not open new pages yet.  
+> This behavior is expected in the current version.
 
 ---
 
@@ -30,22 +42,24 @@ It works on mobile, tablet, and desktop screens automatically. No configuration 
 3. Click on the menu links to navigate.  
 4. Hover effects are not available on mobile devices.  
 
+
 ---
 
 ## Responsive Behavior
 
-Device             | Layout                             |
+| Device              | Layout                              |
+|---------------------|-------------------------------------|
+| Mobile (<768px)     | Logo on top, vertical menu          |
+| Tablet (768–991px)  | Horizontal menu                     |
+| Desktop (≥992px)    | Horizontal menu with wider spacing  |
 
-Mobile (<768px)    | Logo on top, vertical menu         |
-Tablet (768–991px) | Horizontal menu                    |
-Desktop (≥992px)   | Horizontal menu with wider spacing |
 
 > No manual adjustment is required.
 
 ---
 
 ## Installation
-No installation is needed for users:  
+No installation or setup is required for users: 
 1. Open `index.html` in a web browser.  
 2. Use the navigation bar to move between pages.  
 
@@ -66,6 +80,5 @@ Works on modern browsers:
 - Google Chrome  
 - Mozilla Firefox  
 - Microsoft Edge  
-- Safari  
 
 Fully usable on mobile, tablet, and desktop devices.
