@@ -146,4 +146,10 @@ A learning-driven and evolving UI project.
 - Semantic HTML5 structure (`<header>`, `<nav>`)
 - Accessible navigation with `aria-label`
 - Maintainable and scalable CSS architecture
+---
+
+## Contact
+- Email : alexisabna@gmail.com
+- LinkedIn : [linkedin.com/in/AbnaAlexis](https://www.linkedin.com/in/abna-alexis)
+- GitHub : [github.com/AbnaAlexis](https://github.com/alexisabna-Developer)
 
