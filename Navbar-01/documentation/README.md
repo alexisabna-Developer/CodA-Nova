@@ -123,6 +123,9 @@ Tested and compatible with:
 - Microsoft Edge
 
 --- 
+### **Usage / Demo**
+- Live demo available: [View the project]( https://alexisabna-developer.github.io/CodA-Nova/)
+---
 
 ## 🚀 How to Use
 1. Download or clone the repository using the command:  
