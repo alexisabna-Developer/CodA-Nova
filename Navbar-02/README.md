@@ -106,6 +106,8 @@ Each navigation template includes a Figma prototype to visualize layout and UI b
 - Mozilla Firefox
 - Microsoft Edge
 ---
+### 🔗 Live Demo – Navbar 02
+https://alexisabna-Developer.github.io/CodA-Nova/navbar-02/
 
 ## 🚀 Installation & Usage
 1. Download or clone the repository using the command:  
