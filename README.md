@@ -121,6 +121,18 @@ CodA-Nova evolves step by step, from simple navigation bars to a full library of
 - Animated transitions  
 
 ---
+
+## 📊 Project Popularity (Last 14 Days)
+
+![Total Views](https://img.shields.io/badge/Total_Views-300-blue)
+![Unique Visitors](https://img.shields.io/badge/Unique_Visitors-15-green)
+![Total Clones](https://img.shields.io/badge/Total_Clones-153-orange)
+![Unique Cloners](https://img.shields.io/badge/Unique_Cloners-89-red)
+
+> These numbers highlight that **CodA-Nova is actively explored and appreciated by developers**, showing real-world interest and engagement. Active visitors and clones show that **CodA-Nova is impactful and credible**, attracting attention from recruiters and developers.
+
+---
+
 ## 📁 Project Structure
 
 The project is organized in a clear and modular structure to separate **HTML, assets, prototypes, and documentation**. This helps maintain clarity and makes it easy to extend or modify components.
