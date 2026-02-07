@@ -124,7 +124,7 @@ Tested and compatible with:
 
 --- 
 ### **Usage / Demo**
-- Live demo available: [View the project]( https://alexisabna-developer.github.io/CodA-Nova/)
+- Live demo available: [View the project]( https://alexisabna-developer.github.io/CodA-Nova/Navbar-01/index.html)
 ---
 
 ## 🚀 How to Use
