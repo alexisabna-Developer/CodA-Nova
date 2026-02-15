@@ -1,0 +1,628 @@
+/* Universal selector: removes default browser margin and padding */
+*
+{
+     /* Removes default margins applied by the browser */
+    margin: 0;
+
+    /* Removes default internal spacing (padding) */
+    padding: 0;
+
+    /* Includes padding and border inside the element’s width and height */
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body
+{
+    /* Uses a clean and readable font */
+    font-family: sans-serif;
+
+    background-color: #F9FAFB;
+     /* Light background color to contrast with the navbar */
+
+    color: #111827; 
+
+    padding-top: 70px; 
+     /* Adds top padding to prevent content from being hidden behind the fixed navbar */
+
+}
+
+/* Header section */
+header 
+{
+  position: fixed; 
+  /* Makes the navbar fixed to the top while scrolling */
+
+  top: 0;
+
+  
+  left: 0;
+
+  width: 100%;
+
+  background-color: #FFFFFF;
+
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
+
+  z-index: 1000;
+
+  border-radius: 30px;
+}
+
+/* Navigation bar */
+nav
+{
+    /* Enables Flexbox for horizontal alignment */
+    display: flex;
+
+    /* Distributes space evenly between elements */
+    justify-content: space-between;
+
+    /* Vertically centers items */
+    align-items: center;
+
+    /* Vertical spacing for a comfortable navbar height */
+    padding: 20px 40px;
+}
+
+/* Logo styling */
+.logo
+{
+    /* Removes underline from the logo link */
+    text-decoration: none;
+
+    /* Sets the logo color to white */
+    color: #1F2937;
+
+    font-family: sans-serif;
+
+    /* Makes the logo stand out */
+    font-weight: 700;
+
+    /* Slightly increases the logo size */
+    font-size: 22px;
+}
+
+
+/* Menu list */
+nav ul
+{
+    /* Removes default bullet points */
+    list-style: none;
+
+    /* Displays menu items in a single row */
+    display: flex;
+
+    /* Adds spacing between menu links */
+    gap: 20px;
+}
+
+/* Menu links */
+nav ul li a 
+{
+    /* Removes default link underline */
+    text-decoration: none;
+
+    color: #111827;               /* Dark gray for readability */
+    font-weight: 500;             /* Semi-bold for balance */
+    font-size: 16px;
+    
+    /* Increases clickable area for better usability */
+     padding: 8px 12px;
+    
+    
+} 
+
+nav ul li a:hover 
+{
+    color:  #2563EB;
+}
+
+
+/* section home  */
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #F9FAFB;
+}
+
+.profile-illustration {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+ border: 4px solid #1E3A8A;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.profile-illustration:hover {
+  transform: scale(1.03);
+}
+
+
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 16px; 
+  font-weight: 700;
+  color: #0F172A;
+}
+
+ 
+ 
+
+.home h3 {
+  font-size: 1.5rem;
+  color: #4B5563;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+
+.home p {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 40px;
+}
+
+.home p strong {
+  color: #1E3A8A; 
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #1E3A8A;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+ background-color: #2563EB;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* padding inferieur sur mobile  */
+@media (max-width: 768px) {
+  .home {
+    padding: 60px 20px;
+  }
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #FFFFFF; 
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  color: #1E3A8A;
+}
+
+.about p {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+.about p strong {
+  color: #1E3A8A;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* section projects */
+/* --- Projects Section --- */
+.projects {
+  padding: 100px 20px;
+  background-color: #F9FAFB;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1E3A8A; /* couleur de ton thème bleu */
+}
+
+/* Container for all project cards */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual project card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Project title and badge */
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #111111;
+}
+
+.badge {
+  background-color: #1E3A8A; /* bleu thème */
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+/* Project description */
+.project-card p {
+  font-size: 0.95rem;
+  color: #4B5563;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Tech stack styling */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.tech-current {
+  background-color: #D1E8FF; /* bleu clair */
+  color: #1E3A8A;
+  font-weight: 500;
+}
+
+.tech-future {
+  background-color: #E5E7EB; /* gris clair */
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* Project button */
+.project-card .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1E3A8A;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #1D4ED8;
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+
+
+
+/* section contact */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #FFFFFF; 
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  color: #1E3A8A;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #4B5563; 
+  margin-bottom: 16px;
+}
+
+.contact a {
+  color: #1E3A8A; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #2563EB; 
+}
+
+.contact .btn 
+{
+  margin-top: 24px;
+  background-color: #1E3A8A; 
+  padding: 12px 28px;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact .btn:hover {
+  /* background-color: #2563EB; */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+
+footer {
+  background-color: #1E3A8A; 
+  color: #E5E7EB; 
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  margin: 10px 0;
+}
+
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+footer .social-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(100%); 
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+footer .social-icons a:hover img {
+  transform: translateY(-3px);
+  filter: brightness(120%);
+}
+
+
+footer {
+  background-color: #1E3A8A;
+  color: #E5E7EB;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: #E5E7EB;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2563EB; 
+  transform: translateY(-3px);
+}
+
+
+
+/* All the Medias queries... */
+/* SMARTPHONES (≤ 767px) */
+@media (max-width: 767px) {
+    /* Targets the navigation bar on small screens */
+    nav {
+        flex-direction: row;
+        /* Stacks the logo above the menu on small screens */
+
+        padding: 20px 20px;
+        /* Mobile: compact and comfortable */
+
+        justify-content: space-between;
+        /* add space between logo and menu toggle button */
+
+        align-items: center;
+        /* put logo and menu toggle button on the same line  */
+    }
+
+    /* Targets the navigation links list */
+    nav ul {
+        /* Displays menu links vertically */
+        flex-direction: column;
+
+        /* Centers links horizontally */
+        align-items: center;
+
+        /* Adds space between the logo and the menu */
+        margin-top: 20px;
+    }
+
+    .menu-toggle
+    /* Targets the menu toggle button */
+    {
+        display: block;
+        /* Shows the menu toggle button on mobile */
+
+        color: #111827;
+
+        font-size: 28px;
+
+        background: none;
+
+        border: none;
+
+        cursor: pointer;
+    }
+
+    .nav-menu
+    /* Targets the navigation menu */
+    {
+        display: none;
+        /* Hides the menu by default on mobile */
+
+        width: 100%;
+        /* Full width for better touch targets */
+    }
+
+    .nav-menu.active
+    /* Targets the active state of the navigation menu */
+    {
+        display: flex;
+        /* Displays the menu when active */
+
+        flex-direction: column;
+        /* Stacks menu items vertically */
+
+        gap: 10px;
+        /* Adds spacing between menu items */
+
+        align-items: center;
+        /* Centers menu items horizontally */
+    }
+}
+
+/* TABLETS (768px → 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navigation bar layout for tablets */
+    nav {
+        /* Aligns logo and menu on the same row */
+        flex-direction: row;
+    }
+
+    /* Menu links container */
+    nav ul {
+        /* Displays menu links horizontally */
+        flex-direction: row;
+
+        /* Adds equal spacing between each menu item */
+        gap: 20px;
+    }
+}
+
+/* DESKTOP (≥ 992px) */
+@media (min-width: 992px) {
+    /* Menu links on large screens */
+    nav ul {
+        /* Increases spacing for better readability */
+        gap: 30px;
+    }
+
+    .menu-toggle
+    /* Hides the menu toggle button on desktop */
+    {
+        display: none;
+    }
+}
+
+
+
+
+

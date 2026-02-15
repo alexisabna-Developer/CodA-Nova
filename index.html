@@ -5,16 +5,25 @@
 <!-- Start of the HTML document; sets the language to English -->
 
 <head>
-  <!-- Head section contains metadata and settings for the page (not visible on the page) -->
+      <!-- Head section contains metadata and settings for the page (not visible on the page) -->
 
-  <meta charset="UTF-8">
-  <!-- Sets character encoding to UTF-8, supporting letters, accents, and symbols -->
+      <meta charset="UTF-8">
+      <!-- Sets character encoding to UTF-8, supporting letters, accents, and symbols -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Makes the page responsive so it scales properly on mobile and tablet devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Makes the page responsive so it scales properly on mobile and tablet devices -->
 
-  <title>CodA-Nova Navbar Demo Hub</title>
-  <!-- Title that appears in the browser tab -->
+      <meta name="description"
+        content="CodA-Nova is a growing UI components collection starting with a simple, responsive and accessible navigation bar built with HTML and CSS.">
+      <!-- Provides a brief description of the web page for search engines -->
+
+      <title>Abna ALEXIS | Front-End Developer</title>
+      <!-- Title that appears in the browser tab -->
+
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- Links an external CSS file to style the page -->
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <!-- End of head section -->
@@ -22,27 +31,186 @@
 <body>
   <!-- Body section contains the visible content of the page -->
 
-  <h1>CodA-Nova – Navbar Components</h1>
-  <!-- Main heading of the page, introducing the navbar components -->
+      <header>
+        <!-- The header usually contains the logo and the navigation menu -->
 
-  <p>Welcome! Click on any navbar below to see its live demo:</p>
-  <!-- Instruction for visitors to click the links below to see each navbar -->
+            <nav aria-label="Main navigation">
+              <!-- The nav element defines a navigation section -->
 
-  <ul>
-    <!-- Unordered list to organize the navbar links -->
+              <a href="index.html" class="logo">CodA-Nova</a>
+              <!-- Clickable logo that redirects to the home page -->
 
-    <li><a href="Navbar-01/index.html">Navbar 01 – Minimal Responsive</a></li>
-    <!-- List item containing a link to the first navbar demo -->
+              <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+              <!-- Button to toggle the navigation menu on smaller screens -->
 
-    <li><a href="Navbar-02/index.html">Navbar 02 – Hover Effects</a></li>
-    <!-- List item containing a link to the second navbar demo -->
+                  <ul class="nav-menu">
+                    <!-- Unordered list that groups navigation links -->
 
-    <!-- Tu pourras ajouter Navbar-03, Navbar-04, etc. -->
-    <!-- Comment reminding that you can add more navbars as list items -->
-  </ul>
+                        <li><a href="#home">Home</a></li>
+                        <!-- Link to the home section-->
 
-  <p>Each demo shows a fully functional navigation bar component.</p>
-  <!-- Paragraph explaining that each link leads to a live working navbar -->
+                        <li><a href="#about">About</a></li>
+                        <!-- Link to the aboutsection -->
+
+                        <li><a href="#projects">Projects</a></li>
+                        <!-- Link to the projects section -->
+
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- Link to the contact section -->
+
+                  </ul>
+                  <!-- End of the unordered list containing menu links -->
+
+            </nav>
+            <!-- End of the navigation section -->
+
+      </header>
+      <!-- End of the header section -->
+
+ <main>
+    <!-- Main content of the page goes here -->
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+
+      <!-- profile image displayed on the home section, with alt text for accessibility and a class for styling -->
+      <img src="assets/undraw_focused-dev_gqoa.png" alt="developer illustration" class="profile-illustration">
+      
+
+      <h1>Hi, I'm Abna Alexis</h1>
+    
+      <h3>Front-End Developer</h3>
+
+            <p>
+              I build clean and responsive web interfaces using
+
+                <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+             <!-- Button that links to the projects section -->     
+                       
+      <!-- close home section tag -->
+    </section>
+
+        <!-- About section with id for nav linking -->
+        <section id="about" class="about">
+
+          <!-- Section heading -->
+          <h2>About Me</h2>
+
+              <p>
+               I'm a front-end developer passionate about building clean, responsive
+               interfaces with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+               I focus on simplicity, performance, and user-friendly design.
+             </p>
+
+              <p>
+                I have experience creating responsive navigation bars and UI components, and I'm always eager to learn new technologies like BootStrap, PHP, and Tailwind.
+              </p>
+        </section>
+
+
+ <section id="projects" class="projects">
+
+       <h2>My Projects</h2>  
+  
+    <div class="project-list">
+          <!-- CodA-Nova Project Card -->
+              <div class="project-card">
+                    <h3>CodA-Nova <span class="badge">Ongoing</span></h3>
+                    <p>Long-term front-end project focused on clean, responsive interfaces. Future additions include BootStrap,PHP, and Tailwind.</p>
+                  <div class="tech-stack">
+                    <span class="tech tech-current">HTML</span>
+                    <span class="tech tech-current">CSS</span>
+                    <span class="tech tech-current">JavaScript</span>
+                    <span class="tech tech-future">BootStrap</span>
+                    <span class="tech tech-future">PHP</span>
+                    <span class="tech tech-future">Tailwind</span>
+                  </div>
+             </div>
+
+                  <!-- Navbar 01 -->
+                  <div class="project-card">
+                    <h3>Navbar 01 – Minimal Responsive</h3>
+                    <p>Simple and responsive navigation bar built with HTML, CSS, and JS.</p>
+                    <div class="tech-stack">
+                      <span class="tech tech-current">HTML</span>
+                      <span class="tech tech-current">CSS</span>
+                    </div>
+                    <a href="Navbar-01/index.html" class="btn">View Project</a>
+                  </div>
+
+                        <!-- Navbar 02 -->
+                        <div class="project-card">
+                          <h3>Navbar 02 – Hover Effects</h3>
+                          <p>Navigation bar with interactive hover animations for a modern feel.</p>
+                          <div class="tech-stack">
+                            <span class="tech tech-current">HTML</span>
+                            <span class="tech tech-current">CSS</span>
+                          </div>
+                          <a href="Navbar-02/index.html" class="btn">View Project</a>
+                        </div>
+
+                    <!-- Navbar 03 -->
+                    <div class="project-card">
+                      <h3>Navbar 03 – Toggle Menu</h3>
+                      <p>Responsive navbar with a toggle menu for mobile devices.</p>
+                      <div class="tech-stack">
+                        <span class="tech tech-current">HTML</span>
+                        <span class="tech tech-current">CSS</span>
+                        <span class="tech tech-current">JavaScript</span>
+                      </div>
+                      <a href="Navbar-03 Toggle/index.html" class="btn">View Project</a>
+                    </div>
+
+   </div>
+ </section>
+
+
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or inquiries!</p>
+          
+                  <div class="contact-info">
+                    <p>Email: <a href="mailto:alexisabna@gmail.com">Abna Alexis</a></p>
+                    <p>
+                      GitHub: <a href="https://github.com/alexisabna-Developer" target="_blank">Abna Alexis</a> | 
+                      LinkedIn: <a href="https://www.linkedin.com/in/abna-alexis" target="_blank">Abna Alexis</a>
+                      </p>
+                  </div>
+
+            <a href="mailto:alexisabna@gmail.com" class="btn">Get in Touch</a>
+        </section>
+</main>
+
+
+        <footer>
+          <div class="footer-container">
+            <p>&copy; 2026 CodA-Nova. All rights reserved.</p>
+            <hr>
+
+            <div class="social-icons">
+                  <a href="mailto:alexisabna@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+
+                  <a href="https://github.com/alexisabna-Developer" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/abna-alexis" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+            </div>
+          </div>
+        </footer>
+
+
+  <script src="assets/js/script.js"></script>
+  <!-- Links an external JavaScript file for interactivity -->
+
 </body>
 <!-- End of the visible content section -->
 
