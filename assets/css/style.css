@@ -605,6 +605,12 @@ footer p {
         /* Adds equal spacing between each menu item */
         gap: 20px;
     }
+
+     .menu-toggle
+    /* Hides the menu toggle button on tablets */
+    {
+        display: none;
+    }
 }
 
 /* DESKTOP (≥ 992px) */
