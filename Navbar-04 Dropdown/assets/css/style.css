@@ -1,0 +1,143 @@
+/*  Reset default browser styles for consistency */
+
+* {
+    margin: 0;              /* Remove default margin */
+    padding: 0;             /* Remove default padding */
+    box-sizing: border-box; /* Include padding/border in element width */
+}
+
+
+/* Header section */
+header
+{
+    position: sticky;
+    /* Makes the navbar stick to the top while scrolling */
+
+    top: 0;
+    /* Positions the header at the top of the viewport */
+
+    z-index: 1000;
+    /* Ensures the navbar stays above other elements */
+}
+
+/* NAVBAR BASE STYLES*/
+.navbar {
+    display: flex;              /* Flex layout for horizontal alignment */
+    justify-content: space-between; /* Space between logo and menu items */
+    align-items: center;        /* Vertically center items */
+    background-color: #0C1446; /* Dark blue background */
+    padding: 20px 40px;       /* Vertical and horizontal padding */
+}
+
+/* LOGO STYLING */
+.navbar .logo {
+    color: white;               /* Logo text color */
+    font-size: 20px;          /* Slightly larger for emphasis */
+    text-decoration: none;      /* Remove underline */
+    font-weight: bold;           /* Emphasize brand */
+}
+
+/* NAV MENU STYLING */
+.nav-menu {
+    list-style: none;          /* Remove bullets */
+    display: flex;             /* Align menu items horizontally */
+    gap: 20px;               /* Space between menu items */
+}
+
+/* Menu links styling */
+.nav-menu a {
+    color: white;              /* White text for contrast */
+    text-decoration: none;     /* Remove underline */
+    font-size: 16px;           /* Normal readable font */
+    padding: 8px 12px;         /* Vertical and horizontal padding for click area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-menu a:hover
+{
+    background-color: #2b5c92; /* Slightly lighter on hover */
+    border-radius: 4px;
+   
+}
+
+/* DROPDOWN MENU STYLING */
+.dropdown {
+    position: relative;        /* Position relative to parent for dropdown positioning */
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    position: absolute;        /* Absolute positioning relative to parent li */
+    top: 100%;                 /* Place below parent menu item */
+    left: 0;                   /* Align to left edge */
+    background-color: #0C1446; /* Same navbar background */
+    list-style: none;           /* Remove bullets */
+    display: none;             /* Hide by default */
+    min-width: 150px;          /* Minimum width */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    z-index: 999;              /* Above other content */
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    display: block;             /* Make full clickable area */
+    padding: 0.5rem 1rem;       /* Space inside links */
+}
+
+.dropdown-menu li a {
+    transition: background-color 0.3s ease;
+}
+
+/* Show dropdown on hover (desktop) */
+@media (hover: hover) {
+    .dropdown:hover .dropdown-menu {
+        display: block;         /* Show submenu */
+    }
+}
+
+
+   /* MOBILE MENU TOGGLE */
+.menu-toggle {
+    display: none;              /* Hidden by default on desktop */
+    background: none;           /* Remove default button styling */
+    border: none;               /* No border */
+    font-size: 2rem;            /* Make icon large enough to tap */
+    color: white;               /* Icon color */
+    cursor: pointer;            /* Indicate clickable */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;         /* Show hamburger button on mobile */
+    }
+
+    .nav-menu {
+        display: none;           /* Hide menu initially */
+        flex-direction: column;  /* Stack links vertically */
+        width: 100%;             /* Full width menu */
+        background-color: #0C1446; /* Same navbar background */
+    }
+
+    .nav-menu.active {
+        display: flex;           /* Show menu when toggle clicked */
+    }
+
+    .nav-menu li {
+        text-align: center;      /* Center links vertically */
+        width: 100%;             /* Full width links */
+    }
+
+    /* Dropdown menu nested in mobile */
+    .dropdown-menu {
+        position: static;        /* Remove absolute positioning for mobile */
+        box-shadow: none;        /* Remove shadow */
+        display: none;           /* Hide by default */
+    }
+
+    /* Show dropdown menu when parent is active */
+    .dropdown.active .dropdown-menu {
+        display: flex;           /* Show submenu */
+        flex-direction: column;  /* Stack submenu items vertically */
+    }
+}

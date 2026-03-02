@@ -8,7 +8,6 @@
 ## 2. Context / Overview
 This project consists of developing a simple, lightweight, and professional responsive navigation bar.
 The navbar provides clear and efficient navigation on all screen sizes, following modern front-end standards.
-The navbar adapts automatically to mobile, tablet, and desktop devices while ensuring usability, accessibility, and clean UI structure.
 
 ---
 
@@ -25,17 +24,23 @@ The navbar adapts automatically to mobile, tablet, and desktop devices while ens
 ## 4. Features to Implement
 - Navigation bar containing:
   - A clickable logo for easy access to the home page.
-  - Navigation links: Home, About, Portfolio, Contact, Blog.
+  - Navigation links: Home, About, Services(Dropdown), Portfolio, Contact.
 - Horizontal menu layout on tablet and desktop screens.
 - Dropdown menu to organize multiple sections efficiently.
 - Collapsible vertical menu on mobile devices with a hamburger toggle.
-- Sticky navbar that remains visible while scrolling for easy navigation.
+- Sticky behavior implemented using CSS `position: sticky` to keep navigation visible during scroll.
 
 > Some navigation links are placeholders (# or index.html) and will be replaced with real pages in future iterations.
 
+--- 
+
+## 5. Interaction Behavior
+- The dropdown menu opens and closes on click interaction.
+- Navigation links display hover effects on desktop devices to provide visual feedback.
+
 ---
 
-## 5. Responsive Behavior Requirements
+## 6. Responsive Behavior Requirements
 
 | Device | Screen Width    | Expected Behavior                                                   |
 | ------ | --------------- | --------------------------------------------------------------------|
@@ -45,11 +50,11 @@ The navbar adapts automatically to mobile, tablet, and desktop devices while ens
 
 ---
 
-## 6. Technical & Design Constraints
+## 7. Technical & Design Constraints
 - **Responsive design:** The navbar must adapt automatically to all screen sizes.
 - **Layout system:** Use a modern layout system (Flexbox or similar) to align and distribute elements.
 - **Colors & style (used values):**
-  - Navbar background: `#051f20`
+  - Navbar background: `#0C1446`
   - Text color : `#ffffff` 
   - Maintain a clean and professional visual style.
 - **Typography:** Sans-serif font, readable size (~16px).
@@ -59,7 +64,7 @@ The navbar adapts automatically to mobile, tablet, and desktop devices while ens
 
 ---
 
-## 7. Deliverables
+## 8. Deliverables
 - A fully functional responsive navbar (HTML, CSS, JavaScript).
 - A complete **README.md** containing usage instructions and project overview.
 - Project documentation (including user and developer guides).

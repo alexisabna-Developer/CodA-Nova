@@ -1,0 +1,92 @@
+<!-- Document type declaration: tells the browser this is an HTML5 document -->
+<!DOCTYPE html>  
+
+<!-- Root element of the HTML document -->
+<html lang="en">
+<!-- lang="en" specifies that the main content language is English -->
+   
+    <!-- The head element contains metadata (not visible on the page) -->                 
+    <head>
+
+        <!-- Defines the character encoding as UTF-8 -->
+        <meta charset="UTF-8">   
+        
+        <!-- Makes the website responsive on mobile and different screen sizes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+        <!-- Page title displayed in the browser tab -->
+        <title>CodA-Nova | Dropdown Menu</title>
+
+        <!-- Link to the external CSS file -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+    </head>
+     
+    <!-- The body contains all visible content of the page -->
+    <body>
+
+        <!-- The header usually contains the logo and navigation menu -->
+        <header>
+
+            <!-- Navigation element containing site links -->
+            <nav class="navbar" aria-label="Main navigation">
+
+                <!-- Clickable site logo linking to the home page -->
+                <a href="index.html" class="logo">CodA-Nova</a>
+
+                <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+              <!-- Button to toggle the navigation menu on smaller screens -->
+ 
+                <!-- Unordered list that groups navigation links -->
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Services</a>
+                    
+                     <!-- Submenu list for Services -->
+                     <ul class="dropdown-menu">
+                           <li> <a href="#">Web</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Design</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Marketing</a>
+                        </li>
+
+                     </ul>
+                 </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                <!-- End of the unordered list containing menu links -->
+                </ul> 
+
+                <!-- End of the navigation section -->
+            </nav>
+
+            <!-- End of the header section -->
+        </header>
+
+        <!-- External JavaScript file link -->
+        <script src="assets/js/script.js"></script>
+
+        <!-- End of visible page content -->
+    </body>
+
+<!-- End of the HTML document -->
+</html>
