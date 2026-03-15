@@ -1,0 +1,100 @@
+<!-- Declares the document type as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Root element of the HTML document, language set to English -->
+<html lang="en">
+
+<!-- Head section: metadata and resources for the browser -->
+<head>
+    <!-- UTF-8 encoding to support all characters -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsive rule: viewport width equals device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to Bootstrap CSS (CDN) to use built-in classes and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link to custom CSS file for additional styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Page title displayed in the browser tab -->
+    <title>CodA-Nova | Bootstrap Nav</title>
+</head>
+
+<!-- Body section: visible content for users -->
+<body>
+
+  <!-- Start of the navigation bar -->
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    
+    <!-- Bootstrap container-fluid for full-width layout -->
+    <div class="container-fluid">
+
+      <!-- Logo / site name, clickable to return to homepage -->
+      <a class="navbar-brand" href="index.html">CodA-Nova</a>
+
+      <!-- Hamburger button, visible on mobile (<992px), toggles menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <!-- Bootstrap hamburger icon -->
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+
+      <!-- Collapsible menu container -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <!-- Main navigation links -->
+        <ul class="navbar-nav mx-auto">
+          
+          <!-- Home link (active page) -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <!-- Dropdown menu for Services -->
+          <li class="nav-item dropdown">
+            <!-- Link that opens the dropdown -->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+
+            <!-- Dropdown items -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Design</a></li>
+              <li><a class="dropdown-item" href="#">Development</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+            </ul>
+
+          </li>
+
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+        <!-- Call-To-Action (CTA) button "Get Started", right-aligned on desktop -->
+        <a class="btn btn-primary ms-lg-3" href="#">Get Started</a>
+
+      </div> <!-- End of collapse navbar-collapse -->
+
+    </div> <!-- End of container-fluid -->
+
+  </nav> <!-- End of navbar -->
+
+  <!-- Bootstrap JS bundle for interactive components (collapse, dropdown, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

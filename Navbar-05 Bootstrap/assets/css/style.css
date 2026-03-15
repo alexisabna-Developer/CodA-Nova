@@ -1,0 +1,108 @@
+/* Navbar Custom Styles */
+
+/* Navbar background */
+.navbar {
+    background-color: #0C1446; 
+}
+ 
+/* logo */
+.navbar .navbar-brand {
+    color: #ffffff;           
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* navigation links */
+.navbar .nav-link {
+    color: #ffffff;           
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* spacing between nav items */
+.navbar-nav .nav-item {
+    padding: 0 0.4rem; 
+}
+
+/* call-to-Action button CTA */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.45rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* CTA button hover effect */
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+/* Active link  (current page)*/
+.navbar .nav-link.active {
+    color: #FFD700;         
+}
+
+/* Dropdown toggle links color (for dropdowns)  */
+.navbar .dropdown-toggle,
+.navbar .dropdown-toggle.show {
+    color: #ffffff;
+}
+
+/* Dropdown menu customization */
+.dropdown-menu {
+    background-color: #0C1446;          
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Dropdown menu items */
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown menu item hover effect */
+.dropdown-menu .dropdown-item:hover {
+     background-color: rgba(13,110,253,0.15);
+}
+
+/* Toggler (hamburger) color */
+.navbar-toggler {
+    border-color: #ffffff;             
+}
+
+/* Hamburger icon */
+.navbar-toggler-icon {
+    filter: invert(1);                   
+}
+
+/* Collapse padding adjustment for better spacing on mobile devices */
+.navbar-collapse {
+    padding-top: 0.5rem;
+}
+
+/* Hover effects on desktop only*/
+@media (hover: hover) {
+    .navbar .nav-link:hover {
+        background-color: rgba(13,110,253,0.15);
+        border-radius: 4px;
+    }
+}
+
+/* Mobile-specific styles (max-width: 991px) */
+@media (max-width: 991px) {
+    /* Remove hover effect on all nav links and dropdowns */
+    .navbar .navbar-nav .nav-item .nav-link:hover,
+    .navbar .navbar-nav .nav-item .dropdown-toggle:hover,
+    .navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+        background-color: transparent;
+    }
+
+    /* Optional: pointer remains default for dropdown toggle */
+    .navbar .navbar-nav .nav-item .dropdown-toggle {
+        cursor: default;
+    }
+}
