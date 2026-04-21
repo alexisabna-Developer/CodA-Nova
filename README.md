@@ -152,8 +152,9 @@ CodA-Nova/
 - Mozilla Firefox
 - Microsoft Edge
 
-### **Usage / Demo**
-- Live demo available for the first Navbar: [View the project]( https://alexisabna-developer.github.io/CodA-Nova/)  
+### 🔗 Live Demo
+You can explore all navigation bar projects inside my portfolio:
+[Visit CodA-Nova Portfolio](https://alexisabna-developer.github.io/CodA-Nova/)
 
 
 ## 🚀 Installation & Usage
