@@ -1,0 +1,95 @@
+<!-- Declares the document type as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Root element of the HTML document, language set to English -->
+<html lang="en">
+
+<!-- Head section: metadata and resources for the browser -->
+<head>
+
+    <!-- UTF-8 encoding to support all characters -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive rule: viewport width equals device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta description provides a brief summary of the page content for search engines and social media sharing -->
+    <meta name="description" content="CodA-Nova Navbar-06: Responsive Mega Menu navigation built with HTML, CSS and JavaScript, designed for modern and scalable web interfaces.">
+
+    <!-- Page title displayed in the browser tab -->
+    <title>CodA-Nova | Mega Menu</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- Body section: visible content for users -->
+<body>
+
+    <!-- Header section: contains the logo and navigation menu -->
+    <header>
+    
+    <!-- navigation bar with a mega menu -->
+    <nav class="navbar" aria-label="Main navigation">
+
+        <!-- Clickable logo linking to the home page -->
+        <a href="index.html" class="logo">CodA-Nova</a>
+        
+        <!-- button to toggle the navigation menu on smaller screens -->
+        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+
+        <!-- unordered list that groups navigation links -->
+        <ul class="nav-menu">
+
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li><a href="#">About</a></li>
+
+            <!-- Mega menu item with a dropdown containing multiple columns -->
+            <li class="mega-menu">
+
+                
+                <a href="services.html">Services</a>
+
+                <!-- mega menu content with multiple columns -->
+                <div class="mega-menu-content">
+
+                    <!-- mega menu column for Web Development -->
+                    <div class="mega-menu-column">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Backend</a></li>
+                            <li><a href="#">Full Stack</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- mega menu column for Design -->
+                    <div class="mega-menu-column">
+                        <h3>Design</h3>
+                        <ul>
+                            <li><a href="#">UI/UX</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Branding</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#">Portfolio</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+            <!-- end of the unordered list containing menu links -->
+        </ul>
+
+        <!-- end of the navigation section -->
+    </nav>
+
+    <!-- end of the header section -->
+</header>
+
+<!-- Link to the external JavaScript file -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
