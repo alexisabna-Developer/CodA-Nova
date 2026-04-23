@@ -1,0 +1,133 @@
+/* reset default styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar container*/
+.navbar {
+    background: #0C1446;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+.navbar .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* mobile menu button */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Main menu */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu li a:hover {
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+/* mega menu container*/
+.mega-menu
+{
+    position: relative;
+}
+
+/* Mega menu content */
+.mega-menu-content {
+    display: none;
+    gap: 20px;
+    background: #0C1446;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    box-sizing: border-box;
+}
+
+.mega-menu-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* column title */
+.mega-menu-column h3 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+/* links inside mega menu */ 
+.mega-menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-menu-column ul li a {
+    color: #ddd;
+    padding: 5px 0;
+    display: block;
+}
+
+.mega-menu-column ul li a:hover {
+    color: white;
+}
+
+.mega-menu-content.active {
+    display: flex;
+}
+
+.mega-menu:hover .mega-menu-content {
+    display: flex;
+}
+
+/* Responsive mobile */
+@media(max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .mega-menu-content {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+}
