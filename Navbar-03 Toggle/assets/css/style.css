@@ -80,6 +80,7 @@ nav .logo
     padding: 8px 12px;
 }
 
+
 /* Menu toggle button for mobile */
 .menu-toggle {
     display: none;
@@ -201,6 +202,7 @@ nav ul li a
     {
         flex-direction: row;
         /* Aligns logo and menu on the same row */
+        
         }
 
     
