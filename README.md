@@ -90,10 +90,10 @@ CodA-Nova introduces technologies **progressively**, starting with core frontend
 - Mobile-first approach  
 - Git & GitHub
 - Figma (UI/UX)
-
-### 🔄 Planned / Progressive Introduction
 - JavaScript (interactivity, toggles, dropdowns)  
-- Bootstrap5 (optional UI utilities & layout support)  
+- Bootstrap5 (optional UI utilities & layout support)
+- 
+### 🔄 Planned / Progressive Introduction
 - PHP8 & PDO (backend-aware components)  
 
 > Technologies are introduced progressively, aligned with the learning curve.
