@@ -1,0 +1,127 @@
+
+/* GLOBAL RESET */
+*
+{
+    margin: 0;
+    /* Remove default outside spacing from all elements */
+
+    padding: 0;
+    /* Remove default inside spacing from all elements */
+
+    box-sizing: border-box;
+    /* Include padding and border inside element width/height
+       Makes layout sizing easier and cleaner */
+}
+
+
+/* MAIN NAVBAR CONTAINER */
+
+.navbar {
+
+    background-color: #333;
+    /* Dark background color for the navbar */
+
+    color: white;
+    /* Default text color inside navbar */
+
+    padding: 20px 40px;
+    /* Add space inside navbar
+       20px = top/bottom
+       40px = left/right */
+
+    display: flex;
+    /* Activate Flexbox layout
+       Place items horizontally */
+
+    justify-content: space-between;
+    /* Push logo to the left
+       and menu to the right */
+
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+
+/* LOGO */
+.navbar .logo 
+{
+    font-size: 20px;
+    /* Increase logo text size */
+
+    font-weight: bold;
+    /* Make logo text bold */
+
+    color: white;
+    /* Set logo text color */
+
+    text-decoration: none;
+    /* Remove underline from the logo link */
+}
+
+
+/* MENU CONTAINER */
+.menu-item
+{
+    list-style: none;
+    /* Remove bullet points from list */
+
+    display: flex;
+    /* Display menu items horizontally */
+
+    gap: 20px;
+    /* Add space between menu links */
+
+    padding: 8px 12px;
+    /* Add inside spacing around the menu */
+    
+}
+
+
+/* MENU LINKS */
+.menu-item li a
+{
+   color: white; 
+   /* Set menu link text color */
+
+   text-decoration: none;
+   /* Remove underline from links */
+
+   font-size: 18px;
+   /* Increase link text size */
+}
+
+
+/* HOVER + ACTIVE EFFECT */
+.nav-link:hover,
+.nav-link.active
+{
+    color: #ff6600;
+    /* Change link color to orange:
+       - when mouse hovers
+       - or when link is active */
+}
+
+
+/* LOGIN BUTTON */
+.login-btn
+{
+    background-color: #007bff;
+    /* Blue background color for button */
+
+    padding: 8px 15px;
+    /* Add space inside button */
+
+    color: white;
+    /* Button text color */
+
+    border-radius: 5px;
+    /* Round button corners */
+}
+
+
+/* LOGIN BUTTON HOVER EFFECT */
+.login-btn:hover
+{
+    background: #0056b3;
+    /* Darker blue when mouse passes over button */
+}
