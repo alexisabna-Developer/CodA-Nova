@@ -13,28 +13,28 @@
             <li>
                 <!-- List item for Home link -->
 
-                <a href="index.php">Home</a>
+                <a href="index.php" class="nav-link active">Home</a>
                 <!-- Link to the homepage -->
             </li>
 
             <li>
                 <!-- List item for About link -->
 
-                <a href="#">About</a>
+                <a href="#" class="nav-link">About</a>
                 <!-- Placeholder link for About page -->
             </li>
 
             <li>
                 <!-- List item for Services link -->
 
-                <a href="#">Services</a>
+                <a href="#" class="nav-link">Services</a>
                 <!-- Placeholder link for Services page -->
             </li>
 
             <li>
                 <!-- List item for Contact link -->
 
-                <a href="#">Contact</a>
+                <a href="#" class="nav-link">Contact</a>
                 <!-- Placeholder link for Contact page -->
             </li>
 
