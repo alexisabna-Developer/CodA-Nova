@@ -7,6 +7,10 @@
         <a href="index.php" class="logo">CodA-Nova</a>
         <!-- Clickable logo that redirects to the home page -->
 
+         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <!-- Button to toggle the navigation menu on smaller screens -->
+        </button>
+        
         <ul class="menu-item">
             <!-- Unordered list containing navigation links -->
 
