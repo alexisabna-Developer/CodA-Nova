@@ -125,3 +125,89 @@
     background: #0056b3;
     /* Darker blue when mouse passes over button */
 }
+
+/* HIDE MENU BUTTON ON DESKTOP */
+
+
+.menu-toggle
+{
+    display: none;
+    /* Hide the mobile menu button on large screens
+       because desktop already shows the full menu */
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+
+@media (max-width: 992px)
+{
+    /* Apply these styles only when
+       screen width is 992px or smaller */
+
+  
+    /* MOBILE MENU BUTTON */
+
+    .menu-toggle
+    {
+        display: block;
+        /* Show the menu button on mobile */
+
+        background: none;
+        /* Remove default button background */
+
+        border: none;
+        /* Remove default button border */
+
+        color: white;
+        /* Set icon color */
+
+        font-size: 28px;
+        /* Increase hamburger icon size */
+
+        cursor: pointer;
+        /* Change mouse cursor to pointer
+           to indicate button is clickable */
+    }
+
+
+
+
+    /* HAMBURGER ICON */
+
+    .menu-toggle::before
+    {
+        content: "☰";
+        /* Insert hamburger menu icon
+           before the button content */
+    }
+  
+    /* CLOSE ICON (X) */
+
+
+    .menu-toggle.active::before
+    {
+        content: "✕";
+        /* Replace hamburger icon with X
+           when button has active class */
+    }
+
+
+    /* MOBILE MENU */
+    .menu-item
+    {
+        display: none;
+        /* Hide menu by default on mobile */
+
+        flex-direction: column;
+        /* Stack menu links vertically */
+    }
+
+    /* SHOW MOBILE MENU */
+    .menu-item.active
+    {
+        display: flex;
+        /* Show menu when active class is added
+           by JavaScript */
+    }
+}
