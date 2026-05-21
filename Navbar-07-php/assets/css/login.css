@@ -1,0 +1,90 @@
+/* GLOBAL */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* CONTAINER */
+.login-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-card
+{
+    background: #1e1e1e;
+    width: 350px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* TITLE */
+.login-card h2
+{
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* ERROR MESSAGE */
+.error
+{
+    color: #ff4d4d;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* INPUTS */
+.login-card input
+{
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.login-card input:focus
+{
+    border-color: #ff6600;
+}
+
+
+/* BUTTON */
+.login-card button
+{
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.login-card button:hover
+{
+    background: #e65c00;
+}
