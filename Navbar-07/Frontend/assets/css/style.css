@@ -1,0 +1,187 @@
+
+/* GLOBAL RESET */
+*
+{
+    margin: 0;
+    /* Remove default outside spacing from all elements */
+
+    padding: 0;
+    /* Remove default inside spacing from all elements */
+
+    box-sizing: border-box;
+    /* Include padding and border inside element width/height
+       Makes layout sizing easier and cleaner */
+}
+
+
+/* MAIN NAVBAR CONTAINER */
+
+.navbar {
+
+    background-color: #1E3A8A;
+    /* Dark background color for the navbar */
+
+    color: #ffffff;
+    /* Default text color inside navbar */
+
+    padding: 20px 40px;
+    /* Add space inside navbar
+       20px = top/bottom
+       40px = left/right */
+
+    display: flex;
+    /* Activate Flexbox layout
+       Place items horizontally */
+
+    justify-content: space-between;
+    /* Push logo to the left
+       and menu to the right */
+
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+
+/* LOGO */
+.navbar .logo 
+{
+    font-size: 20px;
+    /* Increase logo text size */
+
+    font-weight: bold;
+    /* Make logo text bold */
+
+    color: #FFFFFF;
+    /* Set logo text color */
+
+    text-decoration: none;
+    /* Remove underline from the logo link */
+}
+
+
+/* MENU CONTAINER */
+.menu-item
+{
+    list-style: none;
+    /* Remove bullet points from list */
+
+    display: flex;
+    /* Display menu items horizontally */
+
+    gap: 20px;
+    /* Add space between menu links */
+
+    padding: 8px 12px;
+    /* Add inside spacing around the menu */
+    
+}
+
+
+/* MENU LINKS */
+.menu-item li a
+{
+   color: #EFF6FF; 
+   /* Set menu link text color */
+
+   text-decoration: none;
+   /* Remove underline from links */
+
+   font-size: 18px;
+   /* Increase link text size */
+}
+
+
+.nav-link.active {
+    color: #93C5FD;
+    border-bottom: 2px solid #60A5FA;
+}
+
+
+/* LOGIN BUTTON */
+.login-btn
+{
+     background-color: #2563EB;
+    /* Blue background color for button */
+
+    padding: 8px 15px;
+    /* Add space inside button */
+
+    color: white;
+    /* Button text color */
+
+    border-radius: 5px;
+    /* Round button corners */
+}
+
+
+/* HIDE MOBILE BUTTON ON DESKTOP */
+.menu-toggle {
+    display: none;
+}
+
+/* HOVER EFFECT ONLY FOR DEVICES WITH A MOUSE */
+@media (hover: hover) and (pointer: fine) {
+
+    /* MENU LINKS HOVER */
+    .nav-link:hover {
+        color: rgba(147, 197, 253, 0.8);
+    }
+
+
+    /* LOGIN BUTTON HOVER */
+    .login-btn:hover {
+        background-color: #1D4ED8;
+    }
+
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 767px) {
+
+
+    /* MOBILE MENU TOGGLE */
+    .menu-toggle {
+        display: block;              /* Show hamburger button on mobile */
+        background: transparent;     /* Remove button background */
+        border: none;                /* Remove default button border */
+        font-size: 2rem;              /* Make icon easy to tap */
+        color: white;                 /* Hamburger icon color */
+        cursor: pointer;              /* Show clickable cursor */
+    }
+
+
+    /* MOBILE MENU CONTAINER */
+    .menu-item {
+        display: none;                /* Hide menu by default */
+        flex-direction: column;       /* Put links vertically */
+        width: 100%;                  /* Use full available width */
+        background-color: #1E40AF;    /* Navbar background color */
+        position: absolute;            /* Place menu under navbar */
+        top: 70px;                     /* Adjust depending on navbar height */
+        left: 0;
+        z-index: 1000;
+        gap: 5px;                        /* Remove space between links */
+    }
+
+
+    /* SHOW MENU WHEN ACTIVE */
+    .menu-item.active {
+        display: flex;                /* Display menu after click */
+    }
+
+
+    /* MENU LINKS ON MOBILE */
+    .menu-item li {
+        width: 100%;                  /* Each item takes full width */
+        text-align: center;            /* Center menu items */
+        padding: 8px 0;               /* Add spacing between links */
+    }
+
+
+    /* LOGIN BUTTON MOBILE */
+    .login-btn {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+}
